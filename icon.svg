@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#161b27"/>
+      <stop offset="0.55" stop-color="#0d1019"/>
+      <stop offset="1" stop-color="#07090e"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.46" r="0.55">
+      <stop offset="0" stop-color="#c9a45c" stop-opacity="0.30"/>
+      <stop offset="0.6" stop-color="#c9a45c" stop-opacity="0.06"/>
+      <stop offset="1" stop-color="#c9a45c" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="brass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e6c47e"/>
+      <stop offset="1" stop-color="#c19a4f"/>
+    </linearGradient>
+  </defs>
+
+  <!-- full-bleed background (iOS/Android will round the corners) -->
+  <rect x="0" y="0" width="512" height="512" fill="url(#bg)"/>
+  <rect x="0" y="0" width="512" height="512" fill="url(#glow)"/>
+
+  <!-- clock ring -->
+  <circle cx="256" cy="248" r="150" fill="none" stroke="#3a3320" stroke-width="20"/>
+  <circle cx="256" cy="248" r="150" fill="none" stroke="url(#brass)" stroke-width="11"/>
+
+  <!-- 12 o'clock marker -->
+  <circle cx="256" cy="98" r="20" fill="#c9a45c" opacity="0.28"/>
+  <circle cx="256" cy="98" r="11" fill="#e6c47e"/>
+
+  <!-- hands at 10:10 (classic, balanced) -->
+  <line x1="256" y1="248" x2="183" y2="206" stroke="url(#brass)" stroke-width="16" stroke-linecap="round"/>
+  <line x1="256" y1="248" x2="362" y2="187" stroke="url(#brass)" stroke-width="11" stroke-linecap="round"/>
+
+  <!-- center pin -->
+  <circle cx="256" cy="248" r="17" fill="#0d1019"/>
+  <circle cx="256" cy="248" r="11" fill="#e6c47e"/>
+</svg>
