@@ -2,9 +2,9 @@
 
 A minimalist video alarm. Paste a YouTube link, set a time, and it plays full-screen when that hour arrives — like an alarm clock that wakes you with a video instead of a beep.
 
-**Live:** https://bibliophiles.github.io/Video_Alarm/
+**Live:** https://dennisamematekpor.github.io/video-alarm/
 
-> Single self-contained `index.html` — no build step, no dependencies, no server. Open it and it works.
+> Single self-contained `index.html` — no build step, no dependencies, no server. Open it, and it works.
 
 ---
 
@@ -13,7 +13,7 @@ A minimalist video alarm. Paste a YouTube link, set a time, and it plays full-sc
 - Schedule any **YouTube** video to play at a time you choose.
 - Three schedule modes:
   - **Every day** — a daily ritual.
-  - **Days** — repeat on selected weekdays (e.g. Mon / Wed / Fri).
+  - **Days** — repeat on selected weekdays (e.g., Mon / Wed / Fri).
   - **A date** — fire once on a specific calendar date, then retire itself.
 - A full-screen player takes over at the appointed time, with a one-tap link to open the video on YouTube if needed.
 - Optional **start muted**, per alarm.
@@ -44,7 +44,7 @@ python3 -m http.server 8000
 # then open http://localhost:8000/
 ```
 
-Hosting it (e.g. GitHub Pages) avoids this entirely, since the live site already has a real `https://` origin.
+Hosting it (e.g., GitHub Pages) avoids this entirely, since the live site already has a real `https://` origin.
 
 ## How it works
 
